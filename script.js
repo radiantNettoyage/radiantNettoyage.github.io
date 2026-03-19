@@ -53,7 +53,7 @@ contactForm.addEventListener('submit', (e) => {
     // Build mailto link as a simple free solution
     const subjectText = document.querySelector(`#subject option[value="${subject}"]`).textContent;
     const mailtoBody = `Nom: ${name}%0D%0ACourriel: ${email}%0D%0ASujet: ${subjectText}%0D%0A%0D%0A${encodeURIComponent(message)}`;
-    const mailtoLink = `mailto:info@radiantnettoyage.com?subject=${encodeURIComponent(subjectText)}&body=${mailtoBody}`;
+    const mailtoLink = `mailto:radiantnettoyage@hotmail.com?subject=${encodeURIComponent(subjectText)}&body=${mailtoBody}`;
 
     window.location.href = mailtoLink;
 
