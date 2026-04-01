@@ -414,6 +414,72 @@ h1, h2, h3, h4 {
     line-height: 1.7;
 }
 
+.job-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(11,83,148,0.08);
+    color: var(--primary);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.careers-lead {
+    font-size: 1rem;
+    color: var(--gray-700);
+}
+
+.job-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 32px 0;
+}
+
+.job-highlight {
+    background: var(--white);
+    border: 1px solid var(--gray-100);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    padding: 20px;
+}
+
+.job-highlight-label {
+    display: block;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.job-highlight-value {
+    display: block;
+    color: var(--gray-800);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.job-section {
+    margin-top: 32px;
+}
+
+.job-section h4,
+.job-apply h4 {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+    color: var(--gray-900);
+}
+
+.job-section p {
+    margin-bottom: 0;
+}
+
 .careers-list {
     list-style: none;
     margin-bottom: 32px;
@@ -449,6 +515,29 @@ h1, h2, h3, h4 {
     color: var(--gray-900);
 }
 
+.job-apply {
+    margin-top: 36px;
+    padding: 24px;
+    background: linear-gradient(135deg, rgba(11,83,148,0.08), rgba(0,180,216,0.12));
+    border: 1px solid rgba(11,83,148,0.08);
+    border-radius: var(--radius);
+}
+
+.careers-text .job-apply p {
+    margin-bottom: 18px;
+}
+
+.email-link {
+    color: var(--primary);
+    font-weight: 700;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
 .requirement {
     padding: 16px 0;
     border-bottom: 1px solid var(--gray-100);
@@ -468,6 +557,29 @@ h1, h2, h3, h4 {
 .requirement p {
     color: var(--gray-600);
     font-size: 0.88rem;
+}
+
+.requirement-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.requirement-list li {
+    position: relative;
+    padding-left: 18px;
+    color: var(--gray-600);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.requirement-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
 }
 
 /* ===== Contact ===== */
@@ -663,6 +775,10 @@ h1, h2, h3, h4 {
         gap: 30px;
     }
 
+    .job-highlights {
+        grid-template-columns: 1fr;
+    }
+
     .form-row {
         grid-template-columns: 1fr;
     }
@@ -673,6 +789,11 @@ h1, h2, h3, h4 {
 
     .hero-content {
         padding: 100px 16px 60px;
+    }
+
+    .job-apply,
+    .careers-requirements {
+        padding: 24px 20px;
     }
 }
 
